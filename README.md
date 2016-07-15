@@ -43,7 +43,7 @@ Returned JSON result:
     ]
 }
 
-Please refer to API_doc.pdf for detailed API usage.
+Please refer to Recipe API Documentation.pdf for detailed API usage.
 
 The API service is built according to your requirements. Some "shortcuts", however, are taken as this is not a production ready solution:
 
