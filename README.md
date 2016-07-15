@@ -51,10 +51,10 @@ The API service is built according to your requirements. Some "shortcuts", howev
 
 2. The id of a recipe is a unique identifier. Some realistic constraints are made for the 4 services:
    
-list: List all the recipes. If no recipe exists, the user should be told so.
+    list: List all the recipes. If no recipe exists, the user should be told so.
 
-add: Add one recipe only if the id is not found in the recipes (otherwise update instead), and "add" should include all necessary information (id, name, instructions, ingredients).
+    add: Add one recipe only if the id is not found in the recipes (otherwise update instead), and "add" should include all necessary information (id, name, instructions, ingredients).
 
-remove: Remove one recipe according to id.
+    remove: Remove one recipe according to id.
 
-update: Update one recipe only if the id is found in the recipes (otherwise add instead), and "update" can update all or some of the information (name, instructions, ingredients).
+    update: Update one recipe only if the id is found in the recipes (otherwise add instead), and "update" can update all or some of the information (name, instructions, ingredients).
