@@ -4,12 +4,17 @@ Recipe API coded with Ruby + Sinatra
 This is an implementation of the recipe API service with Ruby + Sinatra.
 
 To run, simply: ruby recipe.rb
+
 To test, you can use Chrome with the Postman plug-in. I have tested it on my Windows system (Ruby 2.3.1 + Sinatra 1.4.7).
 
 It creates a Web service on the localhost:4567. 4 services are supported now:
+
 1. list - list all the recipes (using GET)
+
 2. add - add one recipe (using POST)
+
 3. remove - remove one recipe (using POST)
+
 4. update - update one recipe (using POST)
 
 An example:
@@ -38,12 +43,18 @@ Returned JSON result:
     ]
 }
 
-Please refer to API_doc.pdf for detailed API usage 
+Please refer to API_doc.pdf for detailed API usage.
 
 The API service is built according to your requirements. Some "shortcuts", however, are taken as this is not a production ready solution:
+
 1. The data are currently "hard-coded" in the program file. They are real-life recipes (all my favorites) borrowed from a website. Feel free to customize them, or use the remove and add APIs to create a new recipe list. In a realistic situation, a database should be used, but that's not required by this exercise.
+
 2. The id of a recipe is a unique identifier. Some realistic constraints are made for the 4 services:
-   list: List all the recipes. If no recipe exists, the user should be told so.
-   add: Add one recipe only if the id is not found in the recipes (otherwise update instead), and "add" should include all necessary information (id, name, instructions, ingredients).
-   remove: Remove one recipe according to id.
-   update: Update one recipe only if the id is found in the recipes (otherwise add instead), and "update" can update all or some of the information (name, instructions, ingredients).
+   
+list: List all the recipes. If no recipe exists, the user should be told so.
+
+add: Add one recipe only if the id is not found in the recipes (otherwise update instead), and "add" should include all necessary information (id, name, instructions, ingredients).
+
+remove: Remove one recipe according to id.
+
+update: Update one recipe only if the id is found in the recipes (otherwise add instead), and "update" can update all or some of the information (name, instructions, ingredients).
